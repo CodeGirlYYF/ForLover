@@ -1,0 +1,41 @@
+<div class="secondPage" 
+     ng-controller="secondPageController" 
+     ng-if="currentChoosen=='secondPage'">
+    <div class="mark">{{ marks.mark }}</div>
+    <div class="enterPassword">
+        <div class="head">{{ marks.head }}</div>
+        <div class="entered">
+            <div class="enterKeys">
+                <div class="keys">{{arr[1]}}</div>
+                <div class="keys">{{arr[2]}}</div>
+                <div class="keys">{{arr[3]}}</div>
+                <div class="keys">{{arr[4]}}</div>
+            </div>
+        </div>
+        <div class="number">
+            <div class="row">
+                <span class="num bgChange" ng-click="clickAdd(1)">1</span>
+                <span class="num bgChange" ng-click="clickAdd(2)">2</span>
+                <span class="num bgChange" ng-click="clickAdd(3)">3</span>
+                <span class="num last"></span>
+            </div>
+            <div class="row">
+                <span class="num bgChange" ng-click="clickAdd(4)">4</span>
+                <span class="num bgChange" ng-click="clickAdd(5)">5</span>
+                <span class="num bgChange" ng-click="clickAdd(6)">6</span>
+                <span class="num bgChange" ng-click="clickAdd(0)">0</span>
+            </div>
+            <div class="row">
+                <span class="num bgChange" ng-click="clickAdd(7)">7</span>
+                <span class="num bgChange" ng-click="clickAdd(8)">8</span>
+                <span class="num bgChange" ng-click="clickAdd(9)">9</span>
+                <span class="num  last"></span>
+            </div>
+            <div class="row"></div>
+        </div>
+        <div class="btn">
+            <button class="btn_cancel" ng-click="clear(true)">{{ marks.cancel }}</button>
+            <button class="btn_sure" ng-click="pwdCheck()">{{ marks.sure }}</button>
+        </div>
+    </div>
+</div>

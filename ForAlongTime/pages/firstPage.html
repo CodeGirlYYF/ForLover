@@ -1,0 +1,11 @@
+<div class="firstPage" ng-controller="firstPageController" ng-if="currentChoosen=='firstPage'">
+    <div class="greeting" 
+         ng-show="showSequence=='one'"
+         ng-click="showSequence='two'">{{ greeting.num1 }}</div>
+    <div class="greeting"
+         ng-show="showSequence=='two'"
+         ng-click="showSequence='three'">{{ greeting.num2 }}</div>
+    <div class="greeting"
+         ng-show="showSequence=='three'"
+         ng-click="beginCheck()">{{ greeting.num3 }}</div>
+</div>
